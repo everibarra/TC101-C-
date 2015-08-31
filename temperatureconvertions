@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int x;
+    cout<<"Choose a convertion"<<endl;
+    cout<<""<<endl;
+    cout<<"1. Celsius  to  Fahrenheit"<<endl;
+    cout<<""<<endl;
+    cout<<"2. Fahrenheit to Celsius"<<endl;
+    cout<<""<<endl;
+    cin>>x;
+     if(x==1){
+          float x;
+          cout<<"Enter the temperature in Celsius degrees"<<endl;
+          cout<<""<<endl;
+          cin>>x;
+          cout<<""<<endl;
+          float y=(x*9/5)+(32);
+          cout<<x<<" Celsius degrees equals to "<<y<<" Fahrenheit";
+      }else{
+          float a;
+          cout<<"Enter the temperature in fahrenheit degrees "<<endl;
+          cout<<""<<endl;
+          cin>>a;
+          cout<<""<<endl;
+          float b=(a-32)*5/9;
+          cout<<a<<" Fahrenheit degrees equals to "<<b<<" Celsius degrees";
+      }
+   return 0;
+}
