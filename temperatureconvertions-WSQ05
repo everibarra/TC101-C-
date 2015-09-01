@@ -2,6 +2,8 @@
 using namespace std;
 int main(){
     int x;
+    char c;
+    
     cout<<"Choose a convertion"<<endl;
     cout<<""<<endl;
     cout<<"1. Celsius  to  Fahrenheit"<<endl;
@@ -16,6 +18,22 @@ int main(){
           cin>>x;
           cout<<""<<endl;
           float y=(x*9/5)+(32);
+          if (y<212){
+  cout << "Water does not boil at this temperature (under typical conditions). "<<endl;
+}
+
+if (y>211)
+{
+
+  cout<< "Water does boil at this temperature (under typical conditions). "<<endl;
+
+}
+cout<< ""<<endl;
+if (y<32){
+
+  cout<< "The water is frozen"<< endl;
+
+}
           cout<<x<<" Celsius degrees equals to "<<y<<" Fahrenheit";
       }else{
           float a;
@@ -24,7 +42,24 @@ int main(){
           cin>>a;
           cout<<""<<endl;
           float b=(a-32)*5/9;
+          if (b<212){
+  cout << "Water does not boil at this temperature (under typical conditions). "<<endl;
+}
+
+if (b>211)
+{
+
+  cout<< "Water does boil at this temperature (under typical conditions). "<<endl;
+
+}
+cout<< ""<<endl;
+if (b<33){
+
+  cout<< "The water is frozen"<< endl;
+
+}
           cout<<a<<" Fahrenheit degrees equals to "<<b<<" Celsius degrees";
       }
+
    return 0;
-}
+    }
