@@ -1,0 +1,39 @@
+#include <iostream> //Ever Ibarra Almaral TC1017
+using namespace std;
+
+long fibonacci(long n){
+  long x;
+      if (n<=1){
+      x=n;
+      return x;
+  }
+      else{
+      if(n>1){
+          int y=0;
+          int z=1;
+          long temp;
+          for(int i=1;i<n;i++){
+      temp=y+z;
+      y=z;
+      z=temp;
+    }
+    return z;}
+  }
+  }
+
+  void newline(){
+    cout<<endl;
+  }
+  int main () {
+    long a;
+  cout << "Hello, I´m a calculator of fibonacci algorithm";
+  newline();   newline();
+  cout << "Please, enter the position of the number in the fibonacci algorithm: ";
+  cin >> a;
+  newline();
+  cout << "The fibonacci number is: " << fibonacci (a);
+
+  return 0;
+
+
+}
